@@ -124,9 +124,6 @@ linters:
         text: 'SA1019: http.CloseNotifier has been deprecated'
       - path: (.+)\.go$ # TODO(ldez) must be fixed
         text: 'exported: func name will be used as roundrobin.RoundRobinRequestRewriteListener by other packages'
-      - linters: # TODO(ldez) must be fixed
-          - revive
-        text: 'var-naming: avoid meaningless package names'
     paths:
       - internal/holsterv4
 issues:
