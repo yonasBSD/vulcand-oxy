@@ -39,6 +39,8 @@ linters:
     - wrapcheck
     - noinlineerr
     - wsl # Deprecated
+    - gomodguard # Deprecated
+
   settings:
     depguard:
       rules:
@@ -93,6 +95,7 @@ linters:
     testifylint:
       disable:
         - go-require
+
   exclusions:
     warn-unused: true
     presets:
@@ -126,6 +129,7 @@ linters:
         text: 'exported: func name will be used as roundrobin.RoundRobinRequestRewriteListener by other packages'
     paths:
       - internal/holsterv4
+
 issues:
   max-issues-per-linter: 0
   max-same-issues: 0

@@ -71,6 +71,7 @@ func (s *StickySession) StickBackend(backend *url.URL, w http.ResponseWriter) {
 		cp = opt.Path
 	}
 
+	//nolint:gosec // False positive
 	cookie := &http.Cookie{
 		Name:     s.cookieName,
 		Value:    s.cookieValue.Get(backend),

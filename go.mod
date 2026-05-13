@@ -9,7 +9,7 @@ require (
 	github.com/segmentio/fasthash v1.0.3
 	github.com/stretchr/testify v1.11.1
 	github.com/vulcand/predicate v1.3.0
-	golang.org/x/net v0.53.0
+	golang.org/x/net v0.54.0
 )
 
 require (
